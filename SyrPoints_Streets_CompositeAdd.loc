@@ -1,0 +1,146 @@
+
+LocFileUseUTF8 = True
+Category = Address
+Description = Geocode addresses against multiple address locators.
+
+Version = 10.0
+UseRelativePaths = TRUE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;  Properties Required by ArcGIS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+CLSID = {29B85A89-D2CE-4aeb-BC3F-661A3D2C296E}
+UICLSID = {3D486637-6BCF-4A0C-83DB-A02D437FB8FC}
+
+Fields = Address
+Fields = Address2
+Fields = Address3
+Fields = Neighborhood
+Fields = City
+Fields = Subregion
+Fields = Region
+Fields = Postal
+Fields = PostalExt
+Fields = CountryCode
+
+FieldAliases = Address or Place
+FieldAliases = Address2
+FieldAliases = Address3
+FieldAliases = Neighborhood
+FieldAliases = City
+FieldAliases = County
+FieldAliases = State
+FieldAliases = ZIP
+FieldAliases = ZIP4
+FieldAliases = Country
+
+FieldNames.0 = Address
+FieldNames.1 = Address2
+FieldNames.2 = Address3
+FieldNames.3 = Neighborhood
+FieldNames.4 = City
+FieldNames.5 = Subregion
+FieldNames.6 = Region
+FieldNames.7 = Postal
+FieldNames.8 = PostalExt
+FieldNames.9 = CountryCode
+
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+FieldsRequired = FALSE
+
+FieldSizes = 100
+FieldSizes = 100
+FieldSizes = 100
+FieldSizes = 50
+FieldSizes = 50
+FieldSizes = 50
+FieldSizes = 50
+FieldSizes = 20
+FieldSizes = 20
+FieldSizes = 100
+
+WriteXYCoordFields = FALSE
+WriteStandardizedAddressField = FALSE
+WriteReferenceIDField = FALSE
+WritePercentAlongField = FALSE
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;  Composite Locator Properties
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+CL.Locator = SyrPoints
+CL.Locator = SyrStreets
+
+CL.SR = ByDescr
+
+CL.SR.Descr = PROJCS["NAD_1983_StatePlane_New_York_Central_FIPS_3102_Feet",GEOGCS["GCS_North_American_1983",DATUM["D_North_American_1983",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Me
+CL.SR.Descr = rcator"],PARAMETER["False_Easting",820208.3333333333],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",-76.58333333333333],PARAMETER["Scale_Factor",0.9999375],PARAMETER["Latitude_Of_Origin",40.0],UNIT["Foot_US",0.3048006096012192]]
+
+CL.SR.Domain = -17627200.000000,-47344700.000000,2955094328292.938965,2955064610792.938965
+
+CL.SkipBadLocators = FALSE
+
+CL.SyrPoints.Enabled = TRUE
+
+CL.SyrPoints.Input = Address
+CL.SyrPoints.Input = Address2
+CL.SyrPoints.Input = Address3
+CL.SyrPoints.Input = Neighborhood
+CL.SyrPoints.Input = City
+CL.SyrPoints.Input = Subregion
+CL.SyrPoints.Input = Region
+CL.SyrPoints.Input = Postal
+CL.SyrPoints.Input = PostalExt
+CL.SyrPoints.Input = CountryCode
+
+CL.SyrPoints.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory; Path = .)
+CL.SyrPoints.Name = SyrPoints
+CL.SyrPoints.Select = 
+
+CL.SyrStreets.Enabled = TRUE
+
+CL.SyrStreets.Input = Address
+CL.SyrStreets.Input = Address2
+CL.SyrStreets.Input = Address3
+CL.SyrStreets.Input = Neighborhood
+CL.SyrStreets.Input = City
+CL.SyrStreets.Input = Subregion
+CL.SyrStreets.Input = Region
+CL.SyrStreets.Input = Postal
+CL.SyrStreets.Input = PostalExt
+CL.SyrStreets.Input = CountryCode
+
+CL.SyrStreets.LocWks = Type=Database;Wks=(ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory; Path = .)
+CL.SyrStreets.Name = SyrStreets
+CL.SyrStreets.Select = 
+
+AdditionalReverseOutputs = Addr_type
+AdditionalReverseOutputs = Type
+
+BuildVersion = $Revision: 14$
+BuildVersionDate = $Date: 1/31/2012 5:36:09 PM$
+LocatorWorkspaceString = ProgID = esriDataSourcesFile.ShapefileWorkspaceFactory; Path = C:\Users\jason\OneDrive\Documents\ArcGIS\Projects\
+MaxSuggestCandidates = 10
+RebuildStartTime = 132950216532640000
+RebuildStartTimeAscii = 1:34:13 PM
+RuntimeMemoryLimit = 1024000000
+SafeLocatorName = SyrPoints_Streets_CompositeAdd
+SingleLineField = SingleLine
+SingleLineFieldAlias = Single Line Input
+
+SingleLineFieldNames = Address
+SingleLineFieldNames = SingleLine
+SingleLineFieldNames = FullAddress
+SingleLineFieldNames = Customer
+
+SingleLineFieldSize = 100
+UseMultithreading = True
