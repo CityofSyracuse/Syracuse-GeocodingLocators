@@ -15,9 +15,11 @@ To be able to use a locator file, you need to hae ArcGIS Pro on your computer.  
 7.  You then select if the address is in more than one field or more than one field.
 8.  Then select the name of the column that containes the address values ("Address" in the Crimes files).  
 9.  I have been keeping the selection of (add output to map after completion, Address Location, and Output Fields "All" selected.
-10. I have also been keeping the Category section unchecked (If you only wanted to match to address, and not intersection, or stret name, you can select only the ones you want to include.  I have kept all, because often Crime addresses may be in the form of an intersection and not a traditional address.)
+10. In the Category section, I have been checking the **Address** box.  (If you only wanted to match to address, and not intersection, or street name, you can select only the ones you want to include.  I typically select all Address, because often Crime addresses may be in the form of an intersection and not a traditional address.)
 11. Then click finish, and make sure that your **Output** Name does not include any special characters, such as a $ (because this will throw an error).  If it does have any special characters, just click the Folder Icon and delete the special characters.
-12. Then 
+12. Then click **Run**.  if it is successful, ArcGIS Pro will tell you how many address were Geooded Successfully, how many unmatched addresses you have, and how many ties you have.  
+13. If you would like to explore the results of this, to see which address did not Geocode, click **Yes** that you would like to start the rematch process, where you can review these.
+
 ### TO DO.
 
 1. Work on a Python Script to Automatically Run this in ArcGIS Pro after the Crime Data has been updated, to automatically Geocode the New Crime files and replace the info in the 2022 Crime Data Part 1 with Lat & Long with this new Geocoded dataset.
