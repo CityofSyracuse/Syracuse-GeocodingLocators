@@ -1,6 +1,6 @@
 ### Syracuse Geocoding Locators
 
-This Locator file allows you to do unlimited Geocoding (adding Latitude & Longitude Coordinates) on your local machine, without paying $$$ to ESRI or Google API for this.
+This Locator files allows you to do unlimited Geocoding (adding Latitude & Longitude Coordinates) on your local machine, without paying $$$ to ESRI or Google API for this.
 
 ### To use:
 
