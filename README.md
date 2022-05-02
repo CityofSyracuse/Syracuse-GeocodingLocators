@@ -11,7 +11,7 @@ To be able to use a locator file, you need to hae ArcGIS Pro on your computer.  
 3.  Add the Locator files to your project.  To do that go to the **Insert** tab up top, then click **Connections**, then **Add Locator**.
 4.  You will then navigate to where the downloaded locators are, then press **OK** to add this Locator to your **Project**.
 5.  Then in the **Conents Pane**, right lick on your Datatable that you want to get Latitude and Longitude information on, and select **Geocode Table**.
-6.  This then takes you through the Geocode Wizard, where you will select which Input Locator you are using.  (We have found SyrStreets to work beds for the 100 Block Level crime data), and the **SyrPoints_Streets_CompositeAdd** to work best for most other addresses.
+6.  This then takes you through the Geocode Wizard, where you will select which Input Locator you are using.  (ED Hart at SOCPA and ESRI have found **SyrStreets** to work best for the 100 Block Level Crime Data), and the **SyrPoints_Streets_CompositeAdd** to work best for most other addresses.
 7.  You then select if the address is in more than one field or more than one field.
 8.  Then select the name of the column that containes the address values ("Address" in the Crimes files).  
 9.  I have been keeping the selection of (add output to map after completion, Address Location, and Output Fields "All" selected.
