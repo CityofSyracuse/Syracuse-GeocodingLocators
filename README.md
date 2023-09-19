@@ -19,7 +19,3 @@ To be able to use a locator file, you need to hae ArcGIS Pro on your computer.  
 11. Then click finish, and make sure that your **Output** Name does not include any special characters, such as a $ (because this will throw an error).  If it does have any special characters, just click the Folder Icon and delete the special characters.
 12. Then click **Run**.  if it is successful, ArcGIS Pro will tell you how many address were Geooded Successfully, how many unmatched addresses you have, and how many ties you have.  
 13. If you would like to explore the results of this, to see which address did not Geocode, click **Yes** that you would like to start the rematch process, where you can review these.
-
-### TO DO.
-
-1. Work on a Python Script to Automatically Run this in ArcGIS Pro after the Crime Data has been updated, to automatically Geocode the New Crime files and replace the info in the 2022 Crime Data Part 1 with Lat & Long with this new Geocoded dataset.
