@@ -4,7 +4,7 @@ This Locator files allows you to do unlimited Geocoding (adding Latitude & Longi
 
 ### To use:
 
-To be able to use a locator file, you need to hae ArcGIS Pro on your computer.  If you are a member of our ArcGIS Account want to download this, log into your ArcGIS Account, and then click on **My settings**, then on the left hand part of the screen, click **Licences**, where then should be able to download ArcGIS Pro.
+To be able to use a locator file, you need to have ArcGIS Pro on your computer.  If you are a member of our ArcGIS Account want to download this, log into your ArcGIS Account, and then click on **My settings**, then on the left hand part of the screen, click **Licences**, where then should be able to download ArcGIS Pro.
 
 1.  In ArcGIS Pro, go to the **Map** tab up top, then add the address data that you would like to obtain Latitude & Longitude information on (most likely a table dataset).
 2.  Download the locators files in this repository.
